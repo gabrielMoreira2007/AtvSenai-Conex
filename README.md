@@ -17,6 +17,11 @@ Para testar o funcionamento do login, utilize as seguintes credenciais:
 - **Email:** `amendoim@gmail.com`  
 - **Senha:** `amendoim123`
 
+ou
+
+- **Email:** `teste@gmail.com`  
+- **Senha:** `teste123`
+
 > Essas credenciais já estão registradas no Firebase Authentication do projeto.
 
 ## 🛠️ Tecnologias Utilizadas
@@ -26,3 +31,21 @@ Para testar o funcionamento do login, utilize as seguintes credenciais:
 - JavaScript
 - React Native
 - Firebase Authentication
+
+## Dependências/Bibliotecas que tem que baixar no terminal
+
+- react-navigation/native
+- react-navigation/stack
+- react-navigation/bottom-tabs
+- react-native-reanimated
+- react-native-gesture-handler
+- react-native-screens
+- react-native-safe-area-context
+- react-native-animatable
+- react-native-image-picker
+- expo-image-picker
+- firebase
+- react-native-vector-icons
+- expo, expo-status-bar
+- react-native-vector-icons
+- 
