@@ -4,6 +4,7 @@ import { View, Text, FlatList, TextInput, TouchableOpacity, Image, StyleSheet, A
 import { launchImageLibrary } from 'react-native-image-picker';
 import { auth, db } from '../../firebaseConfig';
 import { collection, addDoc, query, onSnapshot, updateDoc, doc, getDoc } from 'firebase/firestore';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function HomeScreen() {
   const [postagemTexto, setPostagemTexto] = useState('');
@@ -102,8 +103,9 @@ export default function HomeScreen() {
             <Text style={styles.usuario}>{item.usuario}</Text> 
             {item.imagem ? <Image source={{ uri: item.imagem }} style={styles.imagemPost} /> : null}
             <Text style={styles.textoPostagem}>{item.texto}</Text>
-            <TouchableOpacity onPress={() => curtirPostagem(item.id, item.curtidas)}>
-              <Text style={styles.botaoCurtir}>❤️ {item.curtidas}</Text>
+            <TouchableOpacity onPress={() => curtirPostagem(item.id, item.curtidas)} style={styles.botaoCurtir}>
+              <Icon name="heart" size={24} color="#e74c3c" />
+              <Text style={styles.textoCurtidas}>{item.curtidas}</Text>
             </TouchableOpacity>
           </View>
         )}
@@ -172,4 +174,12 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginBottom: 10,
   },
+  botaoCurtir: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  textoCurtidas: {
+    fontSize: 16,
+    marginLeft: 5,
+  },  
 });
