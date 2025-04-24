@@ -1,3 +1,4 @@
+// Gabriel moreira
 import React, { useState } from "react";
 import {
   View,
@@ -45,7 +46,7 @@ export default function LoginScreen({ navigation, route }) {
           resizeMode="contain" 
         />
 
-        <Text style={styles.title}>Bem-vindo de volta!</Text>
+        <Text style={styles.title}>Bem-vindo!</Text>
 
         <TextInput
           placeholder="Email"
@@ -102,10 +103,10 @@ const styles = StyleSheet.create({
     elevation: 5,
   },
   logo: {
-    width: 100, // Largura da logo
-    height: 100, // Altura da logo
-    alignSelf: "center", // Centralizar no componente
-    marginBottom: 20, // Espaço entre a logo e o título
+    width: 100, 
+    height: 100, 
+    alignSelf: "center", 
+    marginBottom: 20, 
   },
   title: {
     fontSize: 24,
