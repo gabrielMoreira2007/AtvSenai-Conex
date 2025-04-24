@@ -1,8 +1,9 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { db } from '../../firebaseConfig';
 import { collection, query, onSnapshot } from 'firebase/firestore';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 export default function NotificationScreen() {
   const [notificacoes, setNotificacoes] = useState([]);
@@ -31,7 +32,9 @@ export default function NotificationScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Notificações 📢</Text>
+      <Text style={styles.titulo}>
+        <Icon name="notifications" size={24} color="#f39c12" /> Notificações
+      </Text>
 
       {notificacoes.length === 0 ? (
         <Text style={styles.semNotificacoes}>Nenhuma nova publicação ainda...</Text>
@@ -85,5 +88,11 @@ const styles = StyleSheet.create({
   },
   texto: {
     fontSize: 16,
+  },
+  titulo: {
+    fontSize: 22,
+    fontWeight: 'bold',
+    textAlign: 'center', // Centraliza o texto
+    marginVertical: 25, // Adiciona espaçamento no topo e na base
   },
 });

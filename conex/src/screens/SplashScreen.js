@@ -1,4 +1,4 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import React, { useEffect, useRef } from 'react';
 import { View, Image, StyleSheet, Animated } from 'react-native';
 import { useNavigation } from '@react-navigation/native';

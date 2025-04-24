@@ -1,4 +1,4 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Image, TextInput, TouchableOpacity, ScrollView, Alert } from 'react-native';
 import { launchImageLibrary } from 'react-native-image-picker'; // Biblioteca para escolher imagem
