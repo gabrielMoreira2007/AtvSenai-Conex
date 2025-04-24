@@ -1,4 +1,4 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import 'react-native-gesture-handler';
 import React, { useState, useEffect } from 'react';
 import { NavigationContainer } from '@react-navigation/native';

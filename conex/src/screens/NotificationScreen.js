@@ -1,4 +1,4 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import React, { useEffect, useState } from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { db } from '../../firebaseConfig';

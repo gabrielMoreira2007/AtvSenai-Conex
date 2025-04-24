@@ -1,3 +1,4 @@
+// Gabriel Moreira e Matheus
 import React, { useEffect, useState } from "react";
 import { View, Text, FlatList, TextInput, TouchableOpacity, StyleSheet, Image } from "react-native";
 import { auth, db } from "../../firebaseConfig";

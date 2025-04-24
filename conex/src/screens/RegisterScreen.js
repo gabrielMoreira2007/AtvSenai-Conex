@@ -1,4 +1,4 @@
-// Gabriel Moreira
+// Gabriel Moreira e Matheus
 import React, { useState } from "react";
 import {
   View,
